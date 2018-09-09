@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">		<!-- linked Bootstrap CDN-->
+	<!-- title added -->
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">									
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>				<!-- linked JQuery CDN-->
+	<script src="index.js"></script>
+</head>
+
+<body>
+	<hr>
+
+	<!-- Buttons that reveal basic info , education exp and professional exp -->
+	<div>
+		<button id='basic_info' class="flex-container btn btn-dark text-light"><h5>Basic Information</h5></button>
+		<div id="para1" class="flex-container" style="border:none;">
+			<p id="info1"></p>
+		</div>
+
+		<button id='basic_edu' class="flex-container btn btn-dark text-light mt-2"><h5>Education</h5></button>
+		<div id="para2" class="flex-container" style="border:none;">
+			<p id="edu1"></p>
+			<p id="edu2"></p>
+			<p id="edu3"></p>
+		</div>
+
+		<button id='prof_exp' class="flex-container btn btn-dark text-light mt-2"><h5>Professional Experience</h5></button>
+		<div id="para3" class="flex-container" style="border:none;">
+			<p id="exp1"></p>
+			<p id="exp2"></p>
+		</div>
+	</div>
+
+	<!-- Profile pic and small description of person -->	
+	<div class="card float-auto ml-5 mb-2 bg-secondary" style="width: 14em;">
+		<img class="card-img-top" href="#" src="avatar.jpg" alt="Card image cap" width="100px" height="200px">
+		<div class="card-body">
+			<a href="#"><h3 class="bg-light text-dark btn btn-dark card-title">Nathaniel Morrison</h3></a>
+			<p class="card-text text-light">As someone who can identify the need of customers for effective solutions. I'm committed to high
+				quality service that ensures a positive experience</p>
+		</div>
+	</div>
+
+	<!-- Personality Highlights -->
+	<div id="person_high" class="btn btn-primary ml-1 mt-1 col-lg-2 col-md-3 col-sm-5">
+		<h6>Personality Highlights</h6>
+		<ul id="skill"></ul>
+	</div><br>
+
+	<!-- Contact details section -->
+	<div id="contact" class="btn btn-primary text-light ml-1 mt-1 col-lg-2 col-md-3 col-sm-5">
+		<p id="para4"></p>
+	</div>
+</body>
+
+</html>
